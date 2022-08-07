@@ -1,0 +1,7 @@
+10:58:38 **** Clean-only build of configuration Debug for project PLL_SYSCLK ****
+make -j8 clean 
+rm -rf *
+ 
+
+10:58:39 Build Finished (took 965ms)
+

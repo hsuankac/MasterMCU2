@@ -1,0 +1,20 @@
+16:40:39 **** Incremental Build of configuration Debug for project RTC_Alarm_standby_wakeup ****
+make -j all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\learning\MasterMCU2\workspace\RTC_Alarm_standby_wakeup\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/learning/MasterMCU2/workspace/RTC_Alarm_standby_wakeup/Inc" -I"C:/learning/MasterMCU2/workspace/RTC_Alarm_standby_wakeup/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/learning/MasterMCU2/workspace/RTC_Alarm_standby_wakeup/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/learning/MasterMCU2/workspace/RTC_Alarm_standby_wakeup/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/learning/MasterMCU2/workspace/RTC_Alarm_standby_wakeup/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: RTC_Alarm_standby_wakeup.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "RTC_Alarm_standby_wakeup.elf" @"objects.list"   -lm
+Finished building target: RTC_Alarm_standby_wakeup.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "RTC_Alarm_standby_wakeup.elf" "RTC_Alarm_standby_wakeup.bin"
+arm-none-eabi-size "RTC_Alarm_standby_wakeup.elf"
+   text	   data	    bss	    dec	    hex	filename
+  12408	    120	   1680	  14208	   3780	RTC_Alarm_standby_wakeup.elf
+ 

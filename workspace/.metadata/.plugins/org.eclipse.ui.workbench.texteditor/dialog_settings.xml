@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="__HAL_RCC_PWR_CLK_ENABLE"/>
+			<item value="RTC_AlarmMask_Definitions"/>
+			<item value="RTC"/>
+			<item value="rtc"/>
+			<item value="RTC_Alarm_Sub_Seconds_Masks_Definitions"/>
+			<item value="RTC_Alarms_Definitions"/>
+			<item value="CAN1_Tx"/>
+			<item value="SetSysClock"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="248" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-21|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="354" key="DIALOG_HEIGHT"/>
+		<item value="1366" key="DIALOG_X_ORIGIN"/>
+		<item value="135" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,7 @@
+10:58:29 **** Clean-only build of configuration Debug for project CAN_Normal_Mode_2Nodes ****
+make -j8 clean 
+rm -rf *
+ 
+
+10:58:30 Build Finished (took 964ms)
+

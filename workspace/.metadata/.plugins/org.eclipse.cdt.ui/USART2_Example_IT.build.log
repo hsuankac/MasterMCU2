@@ -1,0 +1,7 @@
+10:59:09 **** Clean-only build of configuration Debug for project USART2_Example_IT ****
+make -j8 clean 
+rm -rf *
+ 
+
+10:59:11 Build Finished (took 1s.148ms)
+

@@ -1,0 +1,27 @@
+16:08:38 **** Incremental Build of configuration Debug for project RTC_AlarmA ****
+make -j all 
+Building file: ../Core/Src/main.c
+Invoking: MCU GCC Compiler
+C:\learning\MasterMCU2\workspace\RTC_AlarmA\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/learning/MasterMCU2/workspace/RTC_AlarmA/Core/Inc" -I"C:/learning/MasterMCU2/workspace/RTC_AlarmA/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/learning/MasterMCU2/workspace/RTC_AlarmA/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/learning/MasterMCU2/workspace/RTC_AlarmA/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/learning/MasterMCU2/workspace/RTC_AlarmA/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+../Core/Src/main.c: In function 'printmsg':
+../Core/Src/main.c:26:2: warning: implicit declaration of function 'vsprintf' [-Wimplicit-function-declaration]
+  vsprintf(str, format,args);
+  ^~~~~~~~
+Finished building: ../Core/Src/main.c
+ 
+Building target: RTC_AlarmA.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "RTC_AlarmA.elf" @"objects.list"   -lm
+Finished building target: RTC_AlarmA.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "RTC_AlarmA.elf" "RTC_AlarmA.hex"
+arm-none-eabi-size "RTC_AlarmA.elf"
+   text	   data	    bss	    dec	    hex	filename
+  11644	    120	   1688	  13452	   348c	RTC_AlarmA.elf
+ 
+
+16:08:46 Build Finished (took 8s.73ms)
+
